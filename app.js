@@ -22,6 +22,14 @@ downBtn.addEventListener('click', () => {
     chaingeSlide('down')
 })
 
+document.addEventListener('keydown', event => {
+    if (event.key === 'ArrowUp') {
+        chaingeSlide('up')
+    } else if (event.key === 'ArrowDown') {
+        chaingeSlide('down')
+    }
+})
+
 function chaingeSlide(directon) {
     if (directon === 'up') {
         activeSlideIndex++
